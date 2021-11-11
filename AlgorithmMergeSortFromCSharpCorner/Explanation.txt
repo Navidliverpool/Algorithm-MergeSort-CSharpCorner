@@ -1,0 +1,23 @@
+﻿The following computer algorithms are based on divide-and-conquer programming approach −
+
+-> Merge Sort (The one that we are demonstrating in this sample code)
+   Quick Sort
+   Binary Search
+   Strassen's Matrix Multiplication
+   Closest pair (points)
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Merge sort is based on the divide-and-conquer paradigm. We break down an array into two sub arrays. 
+This code sample explains how a merge sort algorithm works and how it is implemented in C#.
+
+Algorithm: Merge Sort
+
+To sort the entire sequence A[1 .. n], make the initial call to the procedure MERGE-SORT (A, 1, n).
+
+MERGE-SORT (A, p, r)
+
+1. IF p < r // Check for base case
+2. THEN q = FLOOR[(p + r)/2] // Divide step
+3. MERGE (A, p, q) // Conquer step.
+4. MERGE (A, q + 1, r) // Conquer step.
+5. MERGE (A, p, q, r) // Conquer step.
